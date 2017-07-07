@@ -34,6 +34,19 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\ILogger.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Services\SqlRepository.cs" />
+    <Compile Include="Services\SqlServerLogger.cs" />
+    <Compile Include="Services\InvoiceService.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="Exceptions\TypeNotRegisteredException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

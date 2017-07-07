@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCContainer", "IoCContainer\IoCContainer.csproj", "{A0400788-CB09-40F2-B885-2661A5CB1EAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCContainer.Tests", "IoC.Tests\IoCContainer.Tests.csproj", "{B6310B20-E6D8-441F-9FD6-4E2DE48875E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{A0400788-CB09-40F2-B885-2661A5CB1EAA}.Debug|x86.Build.0 = Debug|x86
 		{A0400788-CB09-40F2-B885-2661A5CB1EAA}.Release|x86.ActiveCfg = Release|x86
 		{A0400788-CB09-40F2-B885-2661A5CB1EAA}.Release|x86.Build.0 = Release|x86
+		{B6310B20-E6D8-441F-9FD6-4E2DE48875E3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B6310B20-E6D8-441F-9FD6-4E2DE48875E3}.Debug|x86.Build.0 = Debug|Any CPU
+		{B6310B20-E6D8-441F-9FD6-4E2DE48875E3}.Release|x86.ActiveCfg = Release|Any CPU
+		{B6310B20-E6D8-441F-9FD6-4E2DE48875E3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
