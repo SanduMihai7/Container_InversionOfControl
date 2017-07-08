@@ -1,5 +1,5 @@
 ﻿using System;
-namespace IoCContainer.Exceptions
+namespace IoC.Exceptions
 {
     public class TypeNotRegisteredException : Exception
     {

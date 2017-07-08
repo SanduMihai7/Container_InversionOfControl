@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
-using IoCContainer.Interfaces;
-using IoCContainer.Exceptions;
-using IoCContainer.Services;
+using IoC.Interfaces;
+using IoC.Exceptions;
+using IoC.Services;
 
-namespace IoCContainer
+namespace IoC
 {
     public class Container
     {
@@ -40,7 +41,7 @@ namespace IoCContainer
 
         private object CreateInstance(Type destinationType)
         {
-            var parameters = destinationType.GetConstructors()
+            var parameters = destinationType.GetTypeInfo().DeclaredConstructors
                                             .OrderByDescending(c => c.GetParameters().Count())
                                             .First()
                                             .GetParameters()

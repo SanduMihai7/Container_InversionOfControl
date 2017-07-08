@@ -1,8 +1,8 @@
-﻿using NUnit.Framework;
+﻿﻿using NUnit.Framework;
 using System;
-using IoCContainer;
-using IoCContainer.Interfaces;
-using IoCContainer.Services;
+using IoC;
+using IoC.Interfaces;
+using IoC.Services;
 
 namespace IoC.Tests
 {
@@ -31,5 +31,13 @@ namespace IoC.Tests
 
             Assert.AreEqual(typeof(SqlRepository<Employee>), repository.GetType());
 		}
+
+        public class Employee{
+            public string Name
+            {
+                get;
+                set;
+            }
+        }
     }
 }

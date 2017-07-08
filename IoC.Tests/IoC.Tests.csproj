@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B6310B20-E6D8-441F-9FD6-4E2DE48875E3}</ProjectGuid>
+    <ProjectGuid>{A48E6690-3AA2-4D6B-89CC-075E1134BB91}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>IoC.Tests</RootNamespace>
     <AssemblyName>IoC.Tests</AssemblyName>
@@ -37,9 +37,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IoCContainer\IoCContainer.csproj">
-      <Project>{A0400788-CB09-40F2-B885-2661A5CB1EAA}</Project>
-      <Name>IoCContainer</Name>
+    <ProjectReference Include="..\IoC\IoC.csproj">
+      <Project>{1AD4F037-8155-4819-AC17-4F75C49FCAB1}</Project>
+      <Name>IoC</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

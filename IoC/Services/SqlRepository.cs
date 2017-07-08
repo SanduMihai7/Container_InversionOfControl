@@ -1,7 +1,7 @@
 ﻿using System;
-using IoCContainer.Interfaces;
+using IoC.Interfaces;
 
-namespace IoCContainer
+namespace IoC.Services
 {
     public class SqlRepository<T> : IRepository<T>
     {

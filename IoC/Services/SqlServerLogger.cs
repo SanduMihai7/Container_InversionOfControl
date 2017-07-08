@@ -1,7 +1,7 @@
 ﻿using System;
-using IoCContainer.Interfaces;
+using IoC.Interfaces;
 
-namespace IoCContainer.Services
+namespace IoC.Services
 {
     public class SqlServerLogger : ILogger
     {
