@@ -29,14 +29,25 @@ namespace IoC
 
         public object Resolve(Type sourceType)
 		{
+            Type typeToInstantiate;
             if (_map.ContainsKey(sourceType))
             {
-                var destinationType = _map[sourceType];
-                return CreateInstance(destinationType);
+                typeToInstantiate = _map[sourceType];
+            } 
+            else if(sourceType.GetTypeInfo().IsGenericType && _map.ContainsKey(sourceType.GetGenericTypeDefinition()))
+            {
+                var destination = _map[sourceType.GetGenericTypeDefinition()];
+                typeToInstantiate = destination.MakeGenericType(sourceType.GenericTypeArguments);
+            }
+            else if(!sourceType.GetTypeInfo().IsAbstract)
+            {
+                typeToInstantiate = sourceType;
             }
             else{
                 throw new TypeNotRegisteredException(sourceType.FullName);
             }
+
+            return CreateInstance(typeToInstantiate);
 		}
 
         private object CreateInstance(Type destinationType)

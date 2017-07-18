@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{1AD4F037-8155-4819-AC17-4F75C49FCAB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{4036656E-BB33-4579-8225-4366E8A1DD16}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.Tests", "IoC.Tests\IoC.Tests.csproj", "{A48E6690-3AA2-4D6B-89CC-075E1134BB91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.Tests", "IoC.Tests\IoC.Tests.csproj", "{F91D4592-5F22-4377-B514-330ADD41E054}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,13 +15,9 @@ Global
 		{1AD4F037-8155-4819-AC17-4F75C49FCAB1}.Debug|x86.Build.0 = Debug|Any CPU
 		{1AD4F037-8155-4819-AC17-4F75C49FCAB1}.Release|x86.ActiveCfg = Release|Any CPU
 		{1AD4F037-8155-4819-AC17-4F75C49FCAB1}.Release|x86.Build.0 = Release|Any CPU
-		{4036656E-BB33-4579-8225-4366E8A1DD16}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{4036656E-BB33-4579-8225-4366E8A1DD16}.Debug|x86.Build.0 = Debug|Any CPU
-		{4036656E-BB33-4579-8225-4366E8A1DD16}.Release|x86.ActiveCfg = Release|Any CPU
-		{4036656E-BB33-4579-8225-4366E8A1DD16}.Release|x86.Build.0 = Release|Any CPU
-		{A48E6690-3AA2-4D6B-89CC-075E1134BB91}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{A48E6690-3AA2-4D6B-89CC-075E1134BB91}.Debug|x86.Build.0 = Debug|Any CPU
-		{A48E6690-3AA2-4D6B-89CC-075E1134BB91}.Release|x86.ActiveCfg = Release|Any CPU
-		{A48E6690-3AA2-4D6B-89CC-075E1134BB91}.Release|x86.Build.0 = Release|Any CPU
+		{F91D4592-5F22-4377-B514-330ADD41E054}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F91D4592-5F22-4377-B514-330ADD41E054}.Debug|x86.Build.0 = Debug|Any CPU
+		{F91D4592-5F22-4377-B514-330ADD41E054}.Release|x86.ActiveCfg = Release|Any CPU
+		{F91D4592-5F22-4377-B514-330ADD41E054}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
